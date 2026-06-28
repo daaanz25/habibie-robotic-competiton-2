@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* ===========================
+   HRC Design System
+=========================== */
+
+@theme {
+  --color-background: #09090B;
+  --color-surface: #18181B;
+
+  --color-primary: #B30000;
+  --color-primary-hover: #D90429;
+
+  --color-accent: #F97316;
+  --color-tech: #38BDF8;
+
+  --color-text: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+
+  --color-border: rgba(255,255,255,.08);
+}
+
+/* ===========================
+   Global Style
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(circle at top center,
+        rgba(179,0,0,.18),
+        transparent 35%),
+        #09090B;
+
+    color:white;
+
+    min-height:100vh;
+}
