@@ -53,6 +53,72 @@
 @utility about-card {
   @apply rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-red-500/30 hover:bg-white/10;
 }
+/* ===========================
+   TIMELINE
+=========================== */
+
+@utility timeline-card {
+  @apply relative overflow-visible rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-red-500/40 hover:bg-white/10 hover:shadow-2xl hover:shadow-red-500/10;
+}
+
+@utility timeline-step {
+  @apply mb-6 inline-flex h-8 w-8 items-center justify-center rounded-full border border-red-500/20 bg-red-500/10 text-xs font-bold text-red-400;
+}
+
+@utility timeline-icon {
+  @apply relative mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-red-500/20 bg-red-500/10 text-4xl transition-all duration-500 group-hover:scale-110 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:shadow-xl group-hover:shadow-red-500/30;
+}
+
+@utility timeline-date {
+  @apply mt-8 text-sm tracking-[0.25em] text-red-400 uppercase;
+}
+
+@utility timeline-title {
+  @apply mt-3 text-xl font-bold text-white;
+}
+
+@utility timeline-line {
+  @apply absolute top-20 left-[65%] hidden h-[2px] w-full bg-gradient-to-r from-red-500/40 to-white/10 lg:block;
+}
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@utility gallery-card {
+  @apply mb-6 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-red-500/30;
+}
+
+.gallery-card img {
+  @apply w-full rounded-3xl object-cover transition-all duration-500 hover:scale-110;
+}
+@utility contact-card {
+  @apply rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-red-500/30 hover:bg-white/10 hover:shadow-xl hover:shadow-red-500/10;
+}
+
+@utility contact-icon {
+  @apply mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-red-500/10 text-3xl transition-all duration-500 group-hover:scale-110 group-hover:bg-red-500/20;
+}
+
+@utility contact-title {
+  @apply mt-6 text-xl font-bold text-white;
+}
+
+@utility contact-text {
+  @apply mt-3 text-zinc-400;
+}
+@utility footer-title {
+  @apply text-xl font-bold text-white;
+}
+
+@utility footer-link {
+  @apply text-zinc-400 transition-colors duration-300 hover:text-red-400;
+}
 [x-cloak] {
   display: none !important;
 }
